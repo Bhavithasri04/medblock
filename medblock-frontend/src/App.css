@@ -1,0 +1,23 @@
+/* small card components */
+.card { background: rgba(255,255,255,0.015); padding:16px; border-radius:10px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.02); }
+.row { display:flex; gap:12px; }
+.col { flex:1; }
+.input, textarea, select {
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  background: rgba(255,255,255,0.02);
+  border:1px solid rgba(255, 255, 255, 0.89);
+  color: #e6eef6;
+  outline:none;
+}
+button.primary {
+  background: linear-gradient(90deg,#06b6d4,#0891b2);
+  border: none;
+  padding:10px 14px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+.small { font-size:13px; color: #000000; }
+.qr-container { display:flex; gap:16px; align-items:center; }

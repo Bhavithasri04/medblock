@@ -1,0 +1,11 @@
+[package]
+name = "medblockss"
+version = "0.0.1"
+authors = []
+
+[addresses]
+medblockss = "0xb91a67f12134a80bb35b194eb8ae585f5250bd5805006cefd9c8b2db5eb14970"
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }

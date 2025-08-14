@@ -1,0 +1,111 @@
+/* doctor.css */
+
+/* ---------- Global Reset & Base ---------- */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #f6f8fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+p.small, label.small, div.small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+textarea.input, input.input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  resize: vertical;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea.input:focus, input.input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+/* ---------- Card Layout ---------- */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------- Grid System ---------- */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 300px;
+}
+
+/* ---------- Buttons ---------- */
+button.primary, button.secondary {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+}
+
+button.secondary {
+  background: #f3f4f6;
+  color: #333;
+}
+
+button.primary:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-1px);
+}
+
+button.secondary:hover {
+  background: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+button.primary:active, button.secondary:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* ---------- Status Area ---------- */
+.card .small {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
